@@ -1,5 +1,8 @@
 function v=StatMap_ST(datM2,lblC,smType)    
 
+
+    % andrew j. anderson (aander41@ur.rochester.edu)
+    
     % datM2 is the 2D matrix (class x run)-by-voxel
     % lblC is 1-by-(class x run) cell array of labels
     % smType selects the test for stability (use Pearson)
@@ -41,7 +44,7 @@ function v=StatMap_ST(datM2,lblC,smType)
                                         nRepsPerLbl,nUnqLbl)),...
                                         1:nVox);
         function meanR=thisMeanCorr(dM2,corrType)
-            cM2=corr(dM2','type',corrType,'rows','pairwise');
+            cM2=corr(dM2','type',corrType);
             rTriLg=tril(true(size(dM2)),-1);
             meanR=mean(cM2(rTriLg));
         end

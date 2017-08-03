@@ -1,17 +1,20 @@
-# SfNIRS-2016-demo
-Software for performing representational similarity analysis (RSA)-based decoding on fNIRS data. Demonstrated by Zinszer, Bayet, Emberson, &amp; Aslin (2016) at Society for fNIRS meeting (October 2016).
+# Decoding semantic representations from fNIRS signals
+Software for performing representational similarity analysis (RSA)-based decoding on fNIRS data. Demonstrated by Zinszer, Bayet, Emberson, Raizada, &amp; Aslin (2017) in *Neurophotonics* (forthcoming).
 
-To run the analyses in the poster, open the demo script:
+Analyses for each experiment have their own demo scripts:
+(commentary provided within)
 
-SfNIRS_8class_decode_demo_15Oct2016.m (commentary provided within)
+Semantic_8class_Neurophotonics_Exp1_30June2017.m 
+Semantic_8class_Neurophotonics_Exp2_botharrays_30June2017.m
+Semantic_8class_Neurophotonics_Exp2_latlarray_30June2017.m
+Semantic_8class_Neurophotonics_Exp2_postarray_30June2017.m
 
-The demo script relies on several support functions included in this repository. fNIRS data are also included in the repository (or will be very soon), but you should be able to run this script over your own data with minimal modifications.
+The demo script relies on several support functions also included in this repository. fNIRS data are also included in the repository, but you should be able to run this script over your own data with minor modifications.
 
-Permutation-based significance testing is contained in a separate script that must be run after completeing the above demo (with all variables still in the Matlab workspace):
-
-null_distribution_generator_15Oct2016.m
+Permutation-based significance testing is included at the end of each script. This code can take a long time (several hours) to run, depending on the number of permutations performed. To find the results of each analysis and the saved output of the permutation tests we ran, look in the directory "analysis_results" and load the .mat file.
 
 --------------------------------------------
+See also our initial poster presentatation at SfNIRS 2016: http://benjaminz.com/SfNIRS-2016-demo/
 
 Please see Emberson, Zinszer, Raizada, &amp; Aslin (2016) regarding Multichannel Pattern Analysis for fNIRS.
 

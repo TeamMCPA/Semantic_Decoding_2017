@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>SfNIRS-2016-demo by bzinszer</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-79721492-1', 'auto');
+  ga('send', 'pageview');
+</script>
+    
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Semantic Decoding with fNIRS</h1>
+        <p>companion software to <em>Neurophotonics</em> paper by <br>Zinszer, Bayet, Emberson, Raizada, &amp; Aslin, 2016</p>
+
+        <p class="view"><a href="https://github.com/teammcpa/Semantic_Decoding_2017">View the Project on GitHub <small>bzinszer/SfNIRS-2016-demo</small></a></p>
+
+        <ul>
+          <li><a href="https://github.com/teammcpa/Semantic_Decoding_2017/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/teammcpa/Semantic_Decoding_2017/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/teammcpa/Semantic_Decoding_2017">View On <strong>GitHub</strong></a></li>
+        </ul>
+        
+        <p> Download the paper (PDF; <em>coming soon</em>):<br>
+        <a href="" target="new"><img src="" width=50%></a></p>
+        <p> Download supplemental materials (PDF):<br>
+        <a href="https://github.com/TeamMCPA/Semantic_Decoding_2017/raw/gh-pages/SupplementalMaterials_30June2017.pdf" target="new"><img src="" width=50%></a></p>
+      </header>
+      <section>
+<h1 id="decoding-semantic-representations-from-fnirs-signals">Decoding semantic representations from fNIRS signals</h1>
+<p>Software for performing representational similarity analysis (RSA)-based decoding on fNIRS data. Demonstrated by Zinszer, Bayet, Emberson, Raizada, &amp; Aslin (2017) in <em>Neurophotonics</em> (forthcoming).</p>
+
+<p>Analyses for each experiment have their own demo scripts:
+(commentary provided within)</p>
+
+<p>Semantic_8class_Neurophotonics_Exp1_30June2017.m 
+Semantic_8class_Neurophotonics_Exp2_botharrays_30June2017.m
+Semantic_8class_Neurophotonics_Exp2_latlarray_30June2017.m
+Semantic_8class_Neurophotonics_Exp2_postarray_30June2017.m</p>
+
+<p>The demo script relies on several support functions also included in this repository. fNIRS data are also included in the repository, but you should be able to run this script over your own data with minor modifications.</p>
+
+<p>Permutation-based significance testing is included at the end of each script. This code can take a long time (several hours) to run, depending on the number of permutations performed. To find the results of each analysis and the saved output of the permutation tests we ran, look in the directory “analysis_results” and load the .mat file.</p>
+
+<hr />
+<p>See also our initial poster presentatation at SfNIRS 2016: http://benjaminz.com/SfNIRS-2016-demo/</p>
+
+<p>Please see Emberson, Zinszer, Raizada, &amp; Aslin (2016) regarding Multichannel Pattern Analysis for fNIRS.</p>
+
+<ul>
+  <li>
+    <p>bioRxiv: http://biorxiv.org/content/early/2016/06/30/061234</p>
+  </li>
+  <li>
+    <p>Github: http://teammcpa.github.io/EmbersonZinszerMCPA/</p>
+  </li>
+</ul>
+
+<p>Please see Anderson, Zinszer, &amp; Raizada (2015) regarding representaitonal similarity based decoding and encoding methods for fMRI, the foundation upon which this work was built.</p>
+
+<ul>
+  <li>
+    <p>paywall access via NeuroImage journal: http://www.sciencedirect.com/science/article/pii/S1053811915011489</p>
+  </li>
+  <li>
+    <p>free access via Raizada Lab at University of Rochester: http://www.bcs.rochester.edu/people/raizada/papers/AndersonZinszerRaizada_RepSimEncoding_NeuroImage2016.pdf</p>
+  </li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/TeamMCPA">TeamMCPA</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
